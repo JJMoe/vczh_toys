@@ -62,12 +62,12 @@ namespace vczh
 			return array_ref<T, _Dim-1>(sizes.remains, data+(index*sizes.remains.total));
 		}
 
-		int size()
+		int size()const
 		{
 			return sizes.size;
 		}
 
-		int total_size()
+		int total_size()const
 		{
 			return sizes.total;
 		}
@@ -91,12 +91,12 @@ namespace vczh
 			return data[index];
 		}
 
-		int size()
+		int size()const
 		{
 			return sizes.size;
 		}
 
-		int total_size()
+		int total_size()const
 		{
 			return sizes.total;
 		}
@@ -147,12 +147,12 @@ namespace vczh
 			return array_ref<T, _Dim>(sizes, data);
 		}
 
-		int size()
+		int size()const
 		{
 			return sizes.size;
 		}
 
-		int total_size()
+		int total_size()const
 		{
 			return sizes.total;
 		}
